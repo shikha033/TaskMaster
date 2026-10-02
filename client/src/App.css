@@ -1,0 +1,4 @@
+/* App-level shared styles (kept minimal; page styles live in styles/) */
+#root {
+  min-height: 100%;
+}
