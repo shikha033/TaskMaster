@@ -1,6 +1,5 @@
-// Small wrapper around fetch for talking to the Express API.
-// In development, Vite forwards "/api" requests to the server (see vite.config.js).
-const API_URL = import.meta.env.VITE_API_URL || "/api";
+
+const API_URL = (import.meta.env.VITE_API_URL || "") + "/api";
 const TOKEN_KEY = "taskmaster_token";
 
 export const tokenStore = {
